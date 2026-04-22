@@ -597,4 +597,343 @@ console.log(a); // Works (var is function/global scoped)
 ```
 </i>
 
+## 3. Operators
+JavaScript operators are symbols or keywords used to perform operations on values and variables. They are the building blocks of JavaScript expressions and can manipulate data in various ways.
 
+### There are various operators supported by JavaScript:
+
+`1. JavaScript Arithmetic Operators :` Arithmetic Operators perform mathematical calculations like addition, subtraction, multiplication, etc.
+```bash
+1. Addition (+) Operator : The addition operator takes two numerical operands and gives their numerical sum. It also concatenates two strings or numbers.
+
+2. Subtraction (-) Operator : The subtraction operator gives the difference between two operands in the form of numerical value.
+
+3. Multiplication (*) Operator : The multiplication operator gives the product of operands where one operand is a multiplicand and another is multiplier.
+
+4. Division (/) Operator : The division operator provides the quotient of its operands where the right operand is the divisor and the left operand is the dividend.
+
+5. Modulus (%) Operator : The modulus operator returns the remainder left over when a dividend is divided by a divisor. The modulus operator is also known as the remainder operator. It takes the sign of the dividend.
+
+6. Exponentiation (**) Operator : The exponentiation operator gives the result of raising the first operand to the power of the second operand. The exponentiation operator is right-associative. 
+
+7. Increment (++) Operator : The increment operator increments (adds one to) its operand and returns a value.
+
+- If used postfix with the operator after the operand (for example, x++), then it increments and returns the value before incrementing.
+- If used prefix with the operator before the operand (for example, ++x), then it increments and returns the value after incrementing.
+
+8. Decrement (- -) Operator : The decrement operator decrements (subtracts one from) its operand and returns a value.
+
+- If used postfix, with operator after operand (for example, x--), then it decrements and returns the value before decrementing.
+- If used prefix, with the operator before the operand (for example, --x), then it decrements and returns the value after decrementing.
+```
+
+<b> Example: </b>
+```bash
+// 1. Addition (+)
+let a = 5, b = 3;
+console.log(a + b);   // 8
+console.log("Hello " + "World"); // Hello World
+
+// 2. Subtraction (-)
+let c = 10, d = 4;
+console.log(c - d);   // 6
+
+// 3. Multiplication (*)
+let e = 6, f = 2;
+console.log(e * f);   // 12
+
+// 4. Division (/)
+let g = 15, h = 3;
+console.log(g / h);   // 5
+
+// 5. Modulus (%)
+let i = 10, j = 3;
+console.log(i % j);   // 1
+
+// 6. Exponentiation (**)
+let k = 2, l = 3;
+console.log(k ** l);  // 8
+
+// 7. Increment (++)
+let m = 5;
+console.log(m++);     // 5 (postfix)
+console.log(m);       // 6
+
+let n = 5;
+console.log(++n);     // 6 (prefix)
+
+// 8. Decrement (--)
+let p = 5;
+console.log(p--);     // 5 (postfix)
+console.log(p);       // 4
+
+let q = 5;
+console.log(--q);     // 4 (prefix)
+```
+
+`2. JavaScript Assignment Operators :` Assignment operators are used to assign values to variables. They can also perform operations like addition or multiplication while assigning the value.
+```bash
+1. Addition Assignment Operator(+=) : The Addition assignment operator adds the value to the right operand to a variable and assigns the result to the variable. Addition or concatenation is possible. In case of concatenation then we use the string as an operand.
+
+2. Subtraction Assignment Operator(-=) : The Substraction Assignment Operator subtracts the value of the right operand from a variable and assigns the result to the variable.
+
+3. Multiplication Assignment Operator(*=) : The Multiplication Assignment operator multiplies a variable by the value of the right operand and assigns the result to the variable.
+
+4. Division Assignment Operator(/=) : The Division Assignment operator divides a variable by the value of the right operand and assigns the result to the variable.
+
+5. Remainder Assignment Operator(%=) : The Remainder Assignment Operator divides a variable by the value of the right operand and assigns the remainder to the variable.
+
+6. Exponentiation Assignment Operator : The Exponentiation Assignment Operator raises the value of a variable to the power of the right operand.
+
+7. Left Shift Assignment Operator(<<=) : This Left Shift Assignment Operator moves the specified amount of bits to the left and assigns the result to the variable.
+
+8. Right Shift Assignment Operator(>>=) : The Right Shift Assignment Operator moves the specified amount of bits to the right and assigns the result to the variable.
+
+9. Bitwise AND Assignment Operator(&=) : The Bitwise AND Assignment Operator uses the binary representation of both operands, does a bitwise AND operation on them, and assigns the result to the variable.
+
+10. Btwise OR Assignment Operator(|=) : The Btwise OR Assignment Operator uses the binary representation of both operands, does a bitwise OR operation on them, and assigns the result to the variable.
+
+11. Bitwise XOR Assignment Operator(^=) : The Bitwise XOR Assignment Operator uses the binary representation of both operands, does a bitwise XOR operation on them, and assigns the result to the variable.
+
+12. Logical AND Assignment Operator(&&=) : The Logical AND Assignment assigns the value of y into x only if x is a truthy value.
+
+13. Logical OR Assignment Operator(||=) : The Logical OR Assignment Operator is used to assign the value of y to x if the value of x is falsy.
+
+14. Nullish coalescing Assignment Operator(??=) : The Nullish coalescing Assignment Operator assigns the value of y to x if the value of x is null.
+```
+
+<b> Example: </b>
+```bash
+// 1. Addition Assignment (+=)
+let a = 5;
+a += 3;
+console.log(a);   // 8
+
+// 2. Subtraction Assignment (-=)
+let b = 10;
+b -= 4;
+console.log(b);   // 6
+
+// 3. Multiplication Assignment (*=)
+let c = 6;
+c *= 2;
+console.log(c);   // 12
+
+// 4. Division Assignment (/=)
+let d = 15;
+d /= 3;
+console.log(d);   // 5
+
+// 5. Remainder Assignment (%=)
+let e = 10;
+e %= 3;
+console.log(e);   // 1
+
+// 6. Exponentiation Assignment (**=)
+let f = 2;
+f **= 3;
+console.log(f);   // 8
+
+// 7. Left Shift Assignment (<<=)
+let g = 5;        // binary: 0101
+g <<= 1;
+console.log(g);   // 10 (1010)
+
+// 8. Right Shift Assignment (>>=)
+let h = 8;        // binary: 1000
+h >>= 1;
+console.log(h);   // 4 (0100)
+
+// 9. Bitwise AND Assignment (&=)
+let i = 5;        // 0101
+i &= 3;           // 0011
+console.log(i);   // 1 (0001)
+
+// 10. Bitwise OR Assignment (|=)
+let j = 5;        // 0101
+j |= 3;           // 0011
+console.log(j);   // 7 (0111)
+
+// 11. Bitwise XOR Assignment (^=)
+let k = 5;        // 0101
+k ^= 3;           // 0011
+console.log(k);   // 6 (0110)
+
+// 12. Logical AND Assignment (&&=)
+let l = 5;
+l &&= 10;
+console.log(l);   // 10
+
+// 13. Logical OR Assignment (||=)
+let m = 0;
+m ||= 20;
+console.log(m);   // 20
+
+// 14. Nullish Coalescing Assignment (??=)
+let n = null;
+n ??= 30;
+console.log(n);   // 30
+```
+
+`3. JavaScript Comparison Operators :` Comparison operators compare two values and return a boolean (true or false). They are useful for making decisions in conditional statements.
+```bash
+1. Equality Operator (==) : The Equality operator is used to compare the equality of two operands.
+
+2. Inequality Operator (!=) : The Inequality Operator is used to compare the inequality of two operands.
+
+3. Strict equality Operator (===) : The Strict equality Operator is used to compare the equality of two operands with type.
+
+4. Strict inequality Operator (!==) : The Strict inequality Operator is used to compare the inequality of two operands with type.
+
+5. Greater than Operator (>) : The Greater than Operator is used to check whether the left-side value is greater than the right-side value.
+
+6. Greater than or equal Operator (>=) : The Greater than or equal Operator is used to check whether the left side operand is greater than or equal to the right side operand.
+
+7. Less than Operator (<) : The Less than Operator is used to check whether the left-side value is less than the right-side value.
+
+8. Less than or equal Operator (<=) : The Less than or equal Operator is used to check whether the left side operand value is less than or equal to the right side operand value.
+```
+<b> Example: </b>
+```bash
+// 1. Equality (==)
+console.log(5 == "5");   // true (value is same, type ignored)
+
+// 2. Inequality (!=)
+console.log(5 != "3");   // true
+
+// 3. Strict Equality (===)
+console.log(5 === "5");  // false (type is different)
+
+// 4. Strict Inequality (!==)
+console.log(5 !== "5");  // true
+
+// 5. Greater than (>)
+console.log(10 > 5);     // true
+
+// 6. Greater than or equal (>=)
+console.log(5 >= 5);     // true
+
+// 7. Less than (<)
+console.log(3 < 7);      // true
+
+// 8. Less than or equal (<=)
+console.log(5 <= 10);    // true
+```
+
+`4. JavaScript Logical Operators :` Logical operators are mainly used to perform the logical operations that determine the equality or difference between the values.
+```bash
+1. Logical AND (&&) Operator : The logical AND (&&) operator checks whether both operands are true. If both are true, the result is true. If any one or both operands are false, the result is false.
+
+Example:
+// Check if both conditions are true
+let age = 20;
+let idProof = true;
+
+// Logical AND checks both conditions
+if (age >= 18 && idProof) {
+  console.log("Allowed"); 
+} else {
+  console.log("Not Allowed");  
+}
+
+Explanation:
+- It works with numbers as well, treating 0 as false and any non-zero value as true. It treats false, 0, -0, "", null, undefined, NaN and document.all as false.
+
+- In JavaScript, the && operator doesn't return true or false unless explicitly working with boolean values. Instead, it returns the actual value of the last operand evaluated:
+
+. If the first operand (x) is falsy (like 0, null, undefined, false), it stops and returns that value.
+. If the first operand is truthy, it evaluates the second operand and returns its value.
+
+Example:
+// Logical AND with integers
+let x = 5;
+let y = 0;
+
+// 5 (true) && 0 (false)
+let res = x && y; 
+console.log(res); 
+
+// 5 (true) && 10 (true)
+res = x && 10;
+console.log(res);
+```
+<br>
+
+```bash
+2. Logical OR (||) Operator : The logical OR (||) operator checks whether at least one of the operands is true. If either operand is true, the result is true. If both operands are false, the result is false.
+
+Example:
+// Check if at least one condition is true
+let age = 16;
+let hasGuardian = true;
+
+// Logical OR checks if either condition is true
+if (age >= 18 || hasGuardian) {
+  console.log("Allowed");
+} else {
+  console.log("Not Allowed");
+}
+
+Rules for ||:
+
+- If the first operand is truthy, it stops and returns that value.
+- If the first operand is falsy, it evaluates the second operand and returns its value.
+
+- Truthy and Falsy Values in JavaScript
+
+. Falsy values: false, 0, null, undefined, NaN, and "" (empty string).
+. Truthy values: Anything not falsy.
+
+Example: // Logical OR (||) Operator
+let i = 1;
+let j = null;
+let k = undefined;
+let l = 0;
+
+console.log(j || k);
+console.log(i || l);
+
+console.log(Boolean(j || k));
+console.log(Boolean(i || l));
+```
+<br>
+
+```bash
+3. Logical NOT (!) Operator : The logical NOT (!) operator inverts the boolean value of its operand. If the operand is true, it returns false. If the operand is false, it returns true.
+
+Example:
+let isLoggedIn = false;
+
+if (!isLoggedIn) {
+  console.log("Log in!");
+} else {
+  console.log("Welcome back!");
+}
+
+- Logical NOT Works for Non-Boolean Values
+
+. Unlike && and ||, the logical not operator always results in true or false. It consider falsy values (mentioned above with logical or) as false. And all other values as true.
+
+Example:
+let x = "Hello";
+console.log(!x);
+console.log(!!x);  
+
+let y = 20;
+console.log(!y);
+console.log(!!y);
+```
+<br>
+
+```bash
+4. Nullish Coalescing (??) Operator : The nullish coalescing operator (??) returns the right-hand operand when the left-hand operand is either null or undefined. Otherwise, it returns the left-hand operand.
+
+Example:
+let username = null;
+let defaultName = "Guest";
+console.log(username ?? defaultName);
+
+username = "Kartik";
+defaultName = "Guest";
+console.log(username ?? defaultName);
+```
